@@ -1,5 +1,5 @@
 import mysql from "mysql2"
-import config from "../Config.js"
+import config from "../../Config.js"
 
 class ClienteModel{
     constructor(){
@@ -58,9 +58,5 @@ class ClienteModel{
         });
     }
 }
-
-//const categorias = new CategoriaModel()
-// categorias.create("Argentinos")
-//categorias.read()
 
 export default new ClienteModel();

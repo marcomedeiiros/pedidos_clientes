@@ -1,6 +1,6 @@
 import express from "express"
-import ClienteController from "./Controllers/ClienteController.js"
-import PedidoController from "./Controllers/PedidoController.js"
+import ClienteController from "./src/Controllers/ClienteController.js"
+import PedidoController from "./src/Controllers/PedidoController.js"
 
 const server = express()
 

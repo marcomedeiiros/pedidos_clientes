@@ -1,5 +1,5 @@
 import mysql from "mysql2"
-import config from "../Config.js"
+import config from "../../Config.js"
 
 class PedidoModel{
     constructor(){
@@ -33,7 +33,7 @@ class PedidoModel{
             })
         });
     }
-    update(id_pedido,nome_cliente,id_pedido, descricao, valor_total){
+    update(id_pedido,nome_cliente,descricao, valor_total){
         let sql = `UPDATE pedidos SET nome_pedidos="${nome_cliente}", id_pedido="${id_pedido}" WHERE id_pedido="${id_cliente}", descricao="${descricao}",valor_total="${valor_total}";`
         return new Promise((resolve,reject)=>{
             this.conexao.query(sql,(erro,retorno)=>{

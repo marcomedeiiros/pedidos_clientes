@@ -15,7 +15,7 @@ class ClienteController{
         ).catch(
             resposta =>{
                 console.debug(resposta)
-                console.debug("Erro cadastrando uma cliente")
+                console.debug("Erro cadastrando um cliente")
                 res.status(resposta[0]).json(resposta[1])
             }
         )
